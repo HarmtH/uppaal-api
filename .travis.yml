@@ -5,6 +5,7 @@ env:
     - secure: "Qg9s/ujivCDthdKLWtTBnbcZJQawRfDJdpxoB4HHGI147DMeqTt6tj0Mbdp8OrhX1tJfk6MVmNRXbDJrQYPixlamualu9irkx9lTmNtQoGPxN0/pBlkDxeMmQIxowv8sH8AmJ8zUgmjn+b5TqWOJ8Ts9a/YoeqS8ztzcg/0GJY+Lz3LJmFzzfaoz2eHi/nVjF/EhIM/1EmFgav5sgLSDD5kSqxon1eOoguQvGnJzIWEBVmR1RPEVIeBvawIe5UKB+pM18xWMgwQh14W0Qp7stqQlBABsdLidAwnykemIhXsfaa+qsUG8h/BZKVoiNbUkZ/ENk+30h5CoSV4/PrpzyID9uwydZiV+RYn1AfR0d5WdO9IsH3NEt3oFX6fYexdbRfngTj7xpPA0fIOvKdbqWnmoYDyYyIKDw+u/u4NiYSCLSw1yCDRbxIje52ByOILj8RsU3GG7T+v5VofYxqJijdOPGBv1FB8fa7IgejIfBuPnAEqKhLAEN5EfsY76tTWQXnuZWI0YQMZV5w+QHn6Vy9ByBZZ/nMwnvZumw6C0q8oK1pz+ZVvLWzY+5jSMqwDoL0bY4Il2IeyqecFf+LPsbK8Rf4kxim6gMZEFhyrXSPzeHDtAjKcqZiycBYG7IndAfhwnrGM6eoGJwOdQXDtqStJs8vsVKpdaktiluj7xUsQ="
 
 before_install:
+    - echo $MYMAVEN_PASSWORD
     - cp -f settings.xml ~/.m2/settings.xml 
 
 after_success:
